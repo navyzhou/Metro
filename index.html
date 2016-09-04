@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=uft-8 />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/scroll.css" type="text/css" />
+    <link rel="stylesheet" href="css/page_2.css" type="text/css" />
+    <link rel="stylesheet" href="css/page_3.css" type="text/css" />
+    <link rel="stylesheet" href="css/page_4.css" type="text/css" />
+    <link rel="stylesheet" href="css/page_5.css" type="text/css" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type='text/javascript' src='js/common.js'></script>
+    <script type='text/javascript' src='js/slider.js'></script>        
+    <script type="text/javascript" src="myjs/index.js"></script> 
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/coin-slider.js"></script>
+    <script type="text/javascript" src="js/miaov.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#coin-slider').coinslider();
+        });
+		
+		$(function(){
+			$('#page_2 li').click(function(){
+				var num=$(this).parent("ul").parent("div").data("page-name");
+				var ht=$(window).height();
+				num=ht*num;
+				$(".page-info").addClass("openpage").removeClass("slidePageBackLeft");
+				document.getElementsByClassName("page-info").item(0).style.top=num+"px";
+			});
+		
+			
+			$('.r-close-button').click(function(){
+				$(".page-info").addClass("slidePageBackLeft").removeClass("openpage");
+			});
+			
+		});
+    </script> 
+    <title>源辰信息科技</title>
+</head>
+
+<body>
+	 <header id="header">
+        	<a href="#page_1"><div class="h_logo"></div></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#page_2">公司简介</a></li>
+                    <li><a href="#page_3">经营理念</a></li>
+                    <li><a href="#page_4">业务范围</a></li>
+                    <li><a href="#page_5">公司动态</a></li>
+                    <li><a href="#page_6">联系我们</a></li>
+                </ul>
+			</nav>
+      </header>
+
+    <div class="bodybg"></div>
+    
+    <div class="style-switcher">
+    	<h2>欢迎使用样式切换器</h2>
+        <h3>标题栏背景颜色</h3>
+    	<ul class="colors menubg">
+        	<li><a href="javascript:void(0)" class="green"></a></li>
+            <li><a href="javascript:void(0)" class="blue"></a></li>
+            <li><a href="javascript:void(0)" class="orange"></a></li>
+            <li><a href="javascript:void(0)" class="navy"></a></li>
+            <li><a href="javascript:void(0)" class="yellow"></a></li>
+            <li><a href="javascript:void(0)" class="peach"></a></li>
+            <li><a href="javascript:void(0)" class="beige"></a></li>
+            <li><a href="javascript:void(0)" class="purple"></a></li>
+            <li><a href="javascript:void(0)" class="red"></a></li>
+            <li><a href="javascript:void(0)" class="pink"></a></li>
+            <li><a href="javascript:void(0)" class="celadon"></a></li>
+            <li><a href="javascript:void(0)" class="brown"></a></li>
+            <li><a href="javascript:void(0)" class="cherry"></a></li>
+            <li><a href="javascript:void(0)" class="gray"></a></li>
+            <li><a href="javascript:void(0)" class="dark"></a></li>
+            <li><a href="javascript:void(0)" class="cyan"></a></li>
+            <li><a href="javascript:void(0)" class="olive"></a></li>
+            <li><a href="javascript:void(0)" class="dirty-green"></a></li>
+            <li><a href="javascript:void(0)" class="jean"></a></li>
+            <li><a href="javascript:void(0)" class="olan"></a></li>
+            <li><a href="javascript:void(0)" class="groon"></a></li>
+        </ul>
+        <h3>背景图片</h3>
+        <ul class="colors bg" id="bg">
+            <li><a href="javascript:void(0)" class="bg1" title=""></a></li>
+            <li><a href="javascript:void(0)" class="bg2"></a></li>
+            <li><a href="javascript:void(0)" class="bg3"></a></li>
+            <li><a href="javascript:void(0)" class="bg4"></a></li>
+            <li><a href="javascript:void(0)" class="bg5"></a></li>
+            <li><a href="javascript:void(0)" class="bg6"></a></li>
+            <li><a href="javascript:void(0)" class="bg7"></a></li>
+    	</ul>
+    	<h3>背景颜色</h3>
+    	<ul class="colors bgsolid" id="bgsolid">
+          <li><a href="javascript:void(0)" class="green-bg"></a></li>
+          <li><a href="javascript:void(0)" class="blue-bg"></a></li>
+          <li><a href="javascript:void(0)" class="orange-bg"></a></li>
+          <li><a href="javascript:void(0)" class="navy-bg"></a></li>
+          <li><a href="javascript:void(0)" class="yellow-bg"></a></li>
+          <li><a href="javascript:void(0)" class="peach-bg"></a></li>
+          <li><a href="javascript:void(0)" class="beige-bg"></a></li>
+          <li><a href="javascript:void(0)" class="purple-bg"></a></li>
+          <li><a href="javascript:void(0)" class="red-bg"></a></li>
+          <li><a href="javascript:void(0)" class="pink-bg"></a></li>
+          <li><a href="javascript:void(0)" class="celadon-bg"></a></li>
+          <li><a href="javascript:void(0)" class="brown-bg"></a></li>
+          <li><a href="javascript:void(0)" class="cherry-bg"></a></li>
+          <li><a href="javascript:void(0)" class="gray-bg"></a></li>
+          <li><a href="javascript:void(0)" class="dark-bg"></a></li>
+          <li><a href="javascript:void(0)" class="cyan-bg"></a></li>
+          <li><a href="javascript:void(0)" class="olive-bg"></a></li>
+          <li><a href="javascript:void(0)" class="dirty-green-bg"></a></li>
+          <li><a href="javascript:void(0)" class="jean-bg"></a></li>
+          <li><a href="javascript:void(0)" class="olan-bg"></a></li>
+          <li><a href="javascript:void(0)" class="groon-bg"></a></li>
+    	</ul>
+    </div>
+    
+	<div id="page_1" data-page-name="0">
+        <div class="header-content home">
+            <div class="parallax-bg" id="slider-wrap">
+            <div class="slider parallax-bg" id="slider"> <div class="slider-sections sandbox"> 
+            <section class="first"> <img alt="Kendo UI" src="images/home-banner-1.png"/> <div class="text"> <h2>SmartSite Ver 2.2<br />
+            智能网站管理系统 </h2> <p class="copy">采用前后台完全分离技术，通过标签（支持标签循环嵌套、判断标签、自定义标签、文件循环嵌套等）加模板技术.全站生成纯静态页。</p> <p class="button"><a href="http://sc.chinaz.com/" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);">下 载</a> <a class="dimmed" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);" href="http://sc.chinaz.com/">更多..</a></p> </div> </section>
+            <section> <img src="images/dataviz-home-image-q2.png" alt="Kendo UI" /> <div class="text" style="padding-top: 10px;"> <h2>企业网站管理系统</h2> <p class="copy">单页面、单页面索引、新闻、产品展示、下载、友情链接、网上商城，在线支付、配送、支付方式管理、广告等模块。</p> <p class="button"><a href="http://sc.chinaz.com/" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);">下 载</a> <a class="dimmed" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);" href="http://sc.chinaz.com/">更多..</a></p> </div> </section>
+            <section> <img src="images/home_banner_web-q2.png" alt="Kendo UI" /> <div class="text"> <h2>智能移动网站管理系统</h2> <p class="copy">基于jquery.Mobile、HTML5技术框架，前后台完全分离，采用标签加模板技术，全站生成纯静态页。</p> <p class="button"><a href="http://sc.chinaz.com/" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);">下 载</a> <a class="dimmed" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);" href="http://sc.chinaz.com/">更多..</a></p> </div> </section></div> </div> <a class="slider-prev" href="javascript: void(0)">?</a> <a class="slider-next" href="javascript: void(0)">?</a>
+            </div>
+        </div>    	
+	</div>
+    
+	<div id="page_2" data-page-name="1">
+    <ul class="ul-wrapper">
+        	<li>
+            	<div class="page2_1">
+                	<img src="images/page2_1.jpg" alt=""/>
+                    <font class="page2-font-name">公司历程</font>
+                    <font class="page2-font-ename">Development process</font>
+                    <font class="page2-font-intro">记录源辰信息发展过程中的一点一滴。</font>
+                </div>
+                
+                <div class="page2_2">
+                	<img src="images/page2_2.jpg" alt=""/>
+                    <font class="page2-font-name">资质荣誉</font>
+                    <font class="page2-font-ename">Aptitude Honor</font>
+                    <font class="page2-font-intro">社会给予我们的认可。</font>
+                </div>
+                
+            </li>
+            
+            <li>
+            	<div class="page2_3">
+                    <img src="images/page2_3.jpg" alt=""/>
+                    <font class="page2-font-name">企业文化</font>
+                    <font class="page2-font-ename">Enterprise culture</font>
+                    <font class="page2-font-intro">要给用户意想不到的惊喜。</font>
+                </div>
+            	<div class="page2_4">
+                	<img src="images/page2_4.jpg" alt=""/>
+                    <font class="page2-font-name">源辰信息客户</font>
+                    <font class="page2-font-ename">Yuanchen customer</font>
+                    <font class="page2-font-intro">客户的需求就是我们工作的目标</font>
+                </div>
+            </li>
+        
+        	<li>
+            	<div class="page2_5">
+                	<div id='coin-slider'>
+                        <img src='images/page_2/img1.jpg' alt="">
+                        <img src='images/page_2/img2.jpg' alt="">                        
+                        <img src='images/page_2/img3.jpg' alt="">
+                        <img src='images/page_2/img4.jpg' alt="">
+                        <img src='images/page_2/img5.jpg' alt="">
+                        <img src='images/page_2/img6.jpg' alt="">
+                 	</div>    	
+                </div>
+                <div class="page2_6">
+                	<img src="images/summer.jpg" alt="" title="" />
+                </div>
+                <div class="page2_7">
+                	<div><span>是时候了，你需要源辰信息</span><img src="images/video.png" alt="" title=""></div>
+                    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;源辰信息科技有限公司，成立于2008年，我公司为各行各业提供专业的IT技术服务,经过3年多的努力与发展，已具一定的规模及实力，现拥有一支技术精湛的IT服务团队,以卓越的服务品质、专业安全的技术服务实力，为不同群体的用户提供更高更优质的IT服务。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的服务项目：企业电脑外包维护，电脑维修上门维修，电脑组装配件销售，网络工程综合布线，监控安装及维修，专业数据恢复，服务器局域网组建，打印机传真机维修，中小企业网站建设等多种IT服务一体化公司。<br/> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24小时服务：为了支持客户的工作及日常运用，瑞宝电脑运用最先进的技术24小时为用户服务，并免费提供远程协助，电话支持。我们的目标是：努力成为所有用户最满意的IT技术服务提供商，我们相信有您的支持我们会做的更好。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的理念：“诚信为本、实力为先，全心全意为客户”，我们公司秉承客户至上、服务至上的经营理念，以卓越的IT服务品质、专业的技术服务实力、技术精湛的客户服务团队，保障客户在信息时代的高速路上驰骋，又以稳固、发展、忠诚、高效、团结与创新的精神，尊重人才注重技术，使客户在享受信息科技发展最新成果的同时不断获得最大的收益。</p></div>
+                </div>
+            </li>
+        
+        </ul>
+    </div>
+    
+    
+    <div id="page_3" data-page-name="2">
+        <ul class="ul-wrapper page_3">
+            <li>
+
+             <div class="page3-middle">
+               
+             </div>
+
+              <div class="page3-middle-small page3-margin" >
+                <h3 class="page3-position">顾客</h3>
+                <p class="page3-content">企业对环境,使命与核心竞争力的基本认识要正确,绝不能与现实脱离!脱离实际的理念是没有生命的!</p>
+              </div>
+              <div class="page3-middle-small page3-direction">
+                <h3 class="page3-position">科技优势</h3>
+                <p class="page3-content">企业对环境,使命与核心竞争力的基本认识要正确,绝不能与现实脱离!脱离实际的理念是没有生命的!</p>                
+              </div>
+              <div class="page3-middle-small-mode1">
+                <h3 class="page3-position">发展优势</h3>
+                <p class="page3-content">企业对环境,使命与核心竞争力的基本认识要正确,绝不能与现实脱离!脱离实际的理念是没有生命的!</p>
+              </div>
+              <div class="page3-middle-small-mode2">                
+                <h3 class="page3-position">共同目标</h3>
+                <p class="page3-content">企业对环境,使命与核心竞争力的基本认识要正确,绝不能与现实脱离!脱离实际的理念是没有生命的!</p>
+              </div>                                                   
+                          
+            </li>   
+            <li>
+                <div class="page3-work page3-wt">
+                    <p><span class="page3-md">经</span>营思想</p>                
+                    <p>一分钟目标:随时找准市场空白</p>
+                    <p>一分钟赞美:向技术创新要市场</p>
+                    <p>一分钟惩罚:健全信息网络</p>                    
+                </div>
+                <div class="page3-work page3-mt"><span>市场永远在变，诚信永远不变</span></div>
+                <div class="page3-work page3-bt">
+                    <div class="page3wk"></div>
+                    <p><span class="page3-md">经</span>营理念</p>                
+                    <p class="page33">企业规划因人而异 </p>
+                    <p class="page33">企业规划因人而异 </p>
+                    <p class="page33">企业规划因事有别</p>                  
+                </div>
+            </li> 
+            <li>
+                <div class="page3-blog page3-d1">
+                    <article>
+                        <div class="page3-header">
+                            <time datetime="2012-04-19" pubdate="">                                
+                                <span class="day">10</span>        
+                                <span class="month">3/</span>                        
+                                <span class="year">2014</span>
+                            </time>
+                            <h1 class="page3-title">源辰信息科技,卓越领先</h1>        
+                            <p class="page3-meta">            
+                                作 者<a href="#" title="作者">刘源</a></p>
+                        </div>
+                        <div class="page3-context">
+                                    <img alt="信仰" src="images/home_news2.jpg" height="195" width="195">
+                                    <div>
+                                        <p class="page3-h">创业创新—我们追求对客户和公司都至关重要的创新，同时快速而高效地推动其实现。<a href="#">成就客户—我们致力于每位客户的满意和成功</a>。</p>
+                                        <p class="page3-h">诚信正直—我们秉持信任、诚实和富有责任感，无论是对内部还是外部。 
+                                        · 多元共赢—我们倡导互相理解，珍视多元性.</p>                                        
+                                    </div>
+
+                        </div>  
+                        <div class="page3-footer">
+                            <span class="page3-ff page3-fa"></span>
+                            <span class="page3-ff page3-fw"></span>
+                        </div>                          
+                    </article>
+                </div>
+                <div class="page3-blog page3-d2">
+                    <div id="page3accordian">
+                      <ul>
+                        <li>
+                          <div class="page3image_title">
+                            <a href="#">诚 信</a>
+                          </div>
+                          <a href="#">
+                            <img src="images/page2_1.jpg"/>
+                          </a>
+                        </li>
+                        <li>
+                          <div class="page3image_title">
+                            <a href="#">客 户</a>
+                          </div>
+                          <a href="#">
+                            <img src="images/page2_3.jpg"/>
+                          </a>
+                        </li>
+                        <li>
+                          <div class="page3image_title">
+                            <a href="#">技 术</a>
+                          </div>
+                          <a href="#">
+                            <img src="images/page2_4.jpg"/>
+                          </a>
+                        </li>
+                      </ul>
+                    </div> 
+                    <div class="page3BG"><span>我们的动力，来自你们的支持</span></div>                 
+                </div>
+            </li> 
+        </ul>               
+    </div>
+    
+    <div id="page_4" data-page-name="3">
+    	<ul class="ul-wrapper page_4">
+        	<li>
+            	<div class="page4_1">
+                	<img src="images/flag.png" alt="" title="">
+                    <font>软件设计</font>
+                </div>
+                <div class="page4_2">
+                	<p class="page4_2title">典型案例</p>
+                    <img src="images/next.png">
+                    <p>企业网站管理系统单页面、单页面索引、新闻、产品展示、下载、友情链接、网上商城，在线支付、配送、支付方式管理、广告等模块。</p>
+                </div>
+                <div class="page4_3">
+                	<img src="images/dataviz-home-image-q2.png" />
+                </div>
+                <div class="page4_4">
+                	<img src="images/flag.png" alt="" title="">
+                    <font>网站开发</font>
+                </div>
+                <div class="page4_5">
+                	<p class="page4_2title">典型案例</p>
+                    <img src="images/next.png">
+                    <p>网络广播电视台 广播频道 汝城之声 电视频道 新闻综合 民生经济 生活资讯</p>
+                </div>
+                <div class="page4_6">
+                	<a href="http://www.rc.gov.cn/rcxgd/indexServlet.do" target="_blank"><img src="images/10452.jpg" /></a>
+                </div>
+            	
+            </li>
+            
+            <li>
+            	<div class="page4_7">
+                    <ul class="page4_7ul" id="page4_7ul">
+                        <li>1</li><li>2</li><li>3</li><li>4</li>
+                    </ul>
+                    <div class="page4_7div">
+                    	<div class="page4_7_1 page4_7_format">
+                    			 <img src="images/page4_img3.jpg" />
+                        		<span>合作企业1</span>
+                        		<font>合作企业名</font>
+                        		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作企业关于本次合作的感想,我们的服务项目：企业电脑外包维护，电脑维修上门维修，电脑组装配件销售，网络工程综合布线，监控安装及维修，专业数据恢复，服务器局域网组建，打印机传真机维修，中小企业网站建设等多种IT服务一体化公司</p>
+                    	</div>
+                        
+                       <div class="page4_7_2 page4_7_format">
+                    			 <img src="images/page4_img3.jpg" />
+                        		<span>合作企业2</span>
+                        		<font>合作企业名</font>
+                        		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作企业关于本次合作的感想,我们的服务项目：企业电脑外包维护，电脑维修上门维修，电脑组装配件销售，网络工程综合布线，监控安装及维修，专业数据恢复，服务器局域网组建，打印机传真机维修，中小企业网站建设等多种IT服务一体化公司</p>
+                    	</div>
+                        
+                         <div class="page4_7_3 page4_7_format">
+                    			 <img src="images/page4_img3.jpg" />
+                        		<span>合作企业3</span>
+                        		<font>合作企业名</font>
+                        		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作企业关于本次合作的感想,我们的服务项目：企业电脑外包维护，电脑维修上门维修，电脑组装配件销售，网络工程综合布线，监控安装及维修，专业数据恢复，服务器局域网组建，打印机传真机维修，中小企业网站建设等多种IT服务一体化公司</p>
+                    	</div>
+                        
+                        <div class="page4_7_4 page4_7_format">
+                    			 <img src="images/page4_img3.jpg" />
+                        		<span>合作企业4</span>
+                        		<font>合作企业名</font>
+                        		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合作企业关于本次合作的感想,我们的服务项目：企业电脑外包维护，电脑维修上门维修，电脑组装配件销售，网络工程综合布线，监控安装及维修，专业数据恢复，服务器局域网组建，打印机传真机维修，中小企业网站建设等多种IT服务一体化公司</p>
+                    	</div>
+                        
+                    </div>
+                </div>
+                <div class="page4_8">
+                	<span>硬件销售</span>
+                    <img src="images/direction.png" alt="" title="" />
+                    <p>介绍公司硬件销售模块,源辰信息科技有限公司，成立于2008年，我公司为各行各业提供专业的IT技术服务,经过3年多的努力与发展，已具一定的规模及实力，现拥有一支技术精湛的IT服务团队,以卓越的服务品质、专业安全的技术服务实力，为不同群体的用户提供更高更优质的IT服务。</p>
+                </div>
+                <div class="page4_9">
+                	<span>源辰信息网上商城</span>
+                    <img src="images/onedream.png" alt="" title="" />
+                    <p>网上商城 可添加放肆购网站链接  如果不要网上商城 可将次模块改为业务详解,</p>
+                </div>
+            </li>
+            
+            <li>
+            	<div class="page4_10">
+                	<div class="page4_10_1">
+                    	<font>咨询问答</font>
+                    	<span class="page4_10_up" id="bb-nav-up">←</span>
+                    	<span class="page4_10_dn" id="bb-nav-dn">→</span>
+                    </div>
+                   	<div class="page4_10_book">
+                    	<div class="pageformat pagebook1 pageactive">
+                        	<div class="pagebook_after"><p>封面</p></div>
+                            <div class="pagebook_befor"><p>第一题</p></div>
+                        </div>
+                        
+                        <div class="pageformat pagebook2">
+                        	<div class="pagebook_after"><p>源辰信息回答1</p></div>
+                            <div class="pagebook_befor"><p>第二题</p></div>
+                        </div>
+                        
+                        <div class="pageformat pagebook3">
+                        	<div class="pagebook_after"><p>源辰信息回答2</p></div>
+                            <div class="pagebook_befor"><p>第三题</p></div>
+                        </div>
+                        
+                        <div class="pageformat pagebook4">
+                        	<div class="pagebook_after"><p>源辰信息回答3</p></div>
+                            <div class="pagebook_befor"><p>如还有疑问！请联系我们，谢谢合作</p></div>
+                        </div>
+                    </div>
+                </div>
+                	
+                <div class="page4_11"></div>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="page_5" data-page-name="4">
+    	   <ul class="ul-wrapper page_5">
+               <li>
+                   <div class="page5TrandsP">
+                      <ul class="cb-slideshow">
+                          <li><span>Image 01</span><div><h3>源辰信息科技</h3></div></li>
+                          <li><span>Image 02</span><div><h3>卓越领先</h3></div></li>
+                          <li><span>Image 03</span><div><h3>诚信为本</h3></div></li>
+                          <li><span>Image 04</span><div><h3>追求完美</h3></div></li>
+                          <li><span>Image 05</span><div><h3>与时俱进</h3></div></li>
+                          <li><span>Image 06</span><div><h3>领航未来</h3></div></li>
+                      </ul>                    
+                   </div>                   
+                   <div class="page5TrandsF">                       
+                       <div class="page5T1 page5M"><span class="page5TM">业务趋势</span></div>
+                       <div class="page5T2 page5M"><span class="page5TM">最新公告</span></div>
+                       <div class="page5T3 page5M"><span class="page5TM">技术研发</span></div>
+                   </div>
+                   <div class="page5TrandsB">
+                       <div class="page5B page5B1"><span class="page5BB">公司外包</span></div>
+                       <div class="page5B page5B2"><div class="paget5NB"></div><span><h2>公</h2>司新闻</span></div>
+                   </div>
+               </li>
+               <li>
+                   <div class="page5Fengs1 page5F">
+                       <div class="page5Fg1 page5Fg"><span class="page5Fgg1"></span><span class="page5Fgg2">来自源辰的我们</span></div>
+                       <ul id="page5wks">
+                           <li>
+                            <div></div>
+                            <h5 class="paget5F4 paget5F43">创业就是一次又一次地自我否定</h5>                            
+                            <p class="paget5F4 paget5F41"><span>教育背景</span></p>
+                            <p class="paget5F4 paget5F42"><span>求职意向</span></p>    
+                           </li>
+                           
+                           <li>
+                            <div></div>
+                            <h5 class="paget5F4 paget5F43">虽说一春的花,到了时光的深处</h5>                            
+                            <p class="paget5F4 paget5F41"><span>教育背景</span></p>
+                            <p class="paget5F4 paget5F42"><span>求职意向</span></p>    
+                           </li>  
+                           
+                           <li>
+                            <div></div>
+                            <h5 class="paget5F4 paget5F43">姜哥</h5>                            
+                            <p class="paget5F4 paget5F41"><span>教育背景</span></p>
+                            <p class="paget5F4 paget5F42"><span>求职意向</span></p>    
+                           </li>                           
+                       </ul>
+                   </div>
+                   <div class="page5Fengs2 page5F">
+                       <div class="page5Z1 page5Z">
+                           <div class="page5ZP1"><div class="page5ZZ"></div><span><h2>招</h2>聘信息</span></div>
+                           <ul id="page5ZP2">    
+                               <li></li>                                    
+                               <li><span>JAVA工程师</span></li>
+                               <li><span>WEB工程师</span></li>
+                               <li><span>系统分析师</span></li>
+                               <li><span>Android工程师</span></li>
+                               <li><span>C++工程师</span></li>
+                               <li><span>数据库工程师</span></li>
+                               <!--<li><span>数据分析师</span></li>-->
+                           </ul>
+                       </div>
+                       <div class="page5Z2">
+                        <div class="page5M1 page5MM">
+                            <div class="page5M11"><span><h2>行</h2>业新闻</span></div>
+                            <div class="page5Content">
+                                <p>微软CEO Satya Nadella将主持下周在旧金山举办的新闻发布会，届时Satya Nadella将讨论微软“移动第一、云计算第一”的战略!</p>
+                            </div>
+                        </div>
+                        <div class="page5M2 page5MM">
+                            <div class="page5MT"></div>                
+                            <span class="page5SG page5SG1"><h2>发</h2>展趋势</span>
+                            <span class="page5SG page5SG2"><h2>前</h2>景平台</span>
+                            <span class="page5SG page5SG3"><h2>最</h2>新技术</span>
+                            <p class="page5MK">IT之路</p>
+                        </div>
+                       </div>
+                   </div>                   
+               </li>
+               <li>
+                   <div class="page5C1 page5C">
+                        <div id="tagsList">
+                            <a href="#">JS课程</a>
+                            <a href="#" class="red">教程</a>
+                            <a href="#">试听</a>
+                            <a href="#">精品</a>
+                            <a href="#" class="blue">HTML5</a>
+                            <a href="#">SEO</a>
+                            <a href="#">特效</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">miaov</a>
+                            <a href="#">CSS</a>
+                            <a href="#">求职</a>
+                            <a href="#">面试题</a>
+                            <a href="#">继承</a>
+                            <a href="#">CSS3</a>
+                            <a href="#">OOP</a>
+                            <a href="#">XHTML</a>
+                            <a href="#">SQL</a>
+                            <a href="#">W3C</a>
+                            <a href="#">PHP</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">blue</a>
+                            <a href="#">JAVA</a>
+                            <a href="#">ORACL</a>
+                            <a href="#">JAVA</a>
+                        </div>
+
+                        <div style="clear:both"></div>                       
+                   </div>
+                   <div class="page5C2 page5C">
+                       <div class="page5CCH">   
+                            <span><h2>客</h2>户动态</span>      
+                            <div class="page5CCM">
+                                <div class="paget5cmm1 paget5cms"></div>
+                                <div class="paget5cmm2 paget5cms"></div>
+                                <div class="paget5cmm3 paget5cms"></div>
+                            </div>                  
+                       </div>
+                   </div>
+               </li>
+        </ul> 
+    </div>
+    
+    <div id="page_6" data-page-name="5">
+        <div style="width:650px;float:left; margin-top:35px; border:1px #CCC solid; overflow:hidden" id="area_container">
+            <div  id="baidumap" title="双击鼠标左键放大，双击鼠标右键缩小" >
+            	<div id="l-map"></div>
+            </div>
+        </div>
+        <div class="contact">
+        	<form method="post" action="" id="contactform" />
+
+						<p class="input-block">
+							<label for="name">您的姓名<span class="required tcolor">(必须*)</span></label>
+							<input type="text" name="name" id="name" />
+						</p>
+
+						<p class="input-block">
+							<label for="email" id="email_tishi">您的邮箱<span class="required tcolor">(必须*)</span></label>
+							<input type="text" name="email" id="email" onblur="check(this)"/>
+						</p>
+	
+    					<div class="contact_img"></div>
+						<p class="textarea-block">
+							<label for="message">内容: <span class="required tcolor" id="message_tishi">(必须*)</span></label>
+							<textarea name="message" id="message" cols="30" rows="7" onkeyup="checknum(this)"></textarea>	
+						</p>
+
+						<p class="input-block"><br/>
+	                        <label for="verify">验证码?</label>
+                        	<img src="" id="cord" onclick=""/>						
+							<input class="verify" type="text" id="verify" name="verify" />
+							<button type="submit" id="submit">发送</button>
+						</p>
+						
+					</form>
+        </div>
+        
+        
+    </div>
+    <div id="copyright">
+        		<p style="clear:both;">Copyright © 2012-2013 All Rights Reserved 源辰信息科技 © 版权所有</p>
+                <p>公司地址：湖南省衡阳市蒸湘区解放路 丽天名园大厦905   联系热线：0734-8355998</p>
+     </div>
+     
+      <div class="page-info">
+            <div class="page-content">
+                <h2 class="page-title">繁花锦绣，无你何欢？</h2>
+                <p>一座山，隔不了两两相思，一天涯，断不了不在水一方，我用三生轮回，独饮那一碗孟婆汤，把自己葬于那山骨间，静听流水潺潺，云雨朝歌，且听风吟，吟不完我一生相思，细水长流，流不尽我一生痴情！</p>
+                <p>弹指流年，拂歌尘散，消瘦了思念，轻触琴弦，如风之纤细，绕指的情愫，一生的眷恋，在琴瑟合鸣中，演绎了一场又一场岁月的留恋！与我，你就是那天上人间，这繁华锦绣，这红尘盛世，无你又何欢？</p>
+                <p>这一世情缘，绝非朝夕露水之浅，你是我隔世的温柔，枕畔的芳华，郎月下，我还是梦一样的女子，思念落满我的眉睫。如果红颜有梦，那么君可解？如果君子有语，那么红颜可听？可惜，所有繁华落尽，想必到头来都成烟雨，随花谢，随风散，霜寒露重，咫尺天涯，我寂寞如烟，你独坐如莲，晚风透过窗棂悄悄渗入，留一阵冰清徹骨的痛，落花有意，流水无情，你何时才能读懂那一眸的深情？</p>
+                <p>若，你只是茫茫人海中的过客，可不可以不让我痴迷？若，我只是你如花年华的点缀，可不可以不让我沉醉？若，我只是你半世流离的起点，可不可以不让我离开？若，我只是你可有可无的烟火，可不可以不让我消散？花无声，落满地，伤了谁的情，跌碎谁的心？</p>
+                 <p>多少红尘过客，多少过往云烟，一声离别，天涯海角，淡漠如冰，若即若离，任由一片炙情凉薄成了冰冻的模样！一世迷情，梦醒时分，你终究不是那痴情所归，奈何心已成殇，凝神思忖，泪流如注，那一程情深意重，那一番痛彻心扉，凭谁堪怜？</p>
+                 <p>一曲离别，欲语还休，若无缘，与之言多，亦废，不如守酌以清心，待之以沉默，缘来不惊，缘去不扰，随意花开花又落，你若归来，我笑靥相迎，你若离去，我目光相送，不卑不亢，岁月静好！</p>
+             </div>
+            <div class="close-button r-close-button">X</div>
+        </div>
+ <!-- <script type="text/javascript">
+   window.onload = function() {
+	   var map = new BMap.Map("area_container");                     // 创建Map实例
+        var point = new BMap.Point(112.6066,26.90056);// 创建点坐标
+		map.setCurrentCity("衡阳");        
+        map.centerAndZoom(point, 15);                            // 初始化地图,设置中心点坐标和地图级别。
+        var marker = new BMap.Marker(point);                        // 创建标注
+        map.addOverlay(marker);                                    //将标注添加到地图中
+   };
+
+</script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>-->
+  
+<script type="text/javascript">
+function G(id) {
+    return document.getElementById(id);
+}
+
+var map = new BMap.Map("l-map");
+var point = new BMap.Point(112.6066,26.90056);
+map.setCurrentCity("衡阳");// 设置地图显示的城市 此项是必须设置的
+map.centerAndZoom(point,18);
+map.addOverlay(new BMap.Marker(point));    //添加标注
+map.enableScrollWheelZoom(true);
+
+var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+    {"input" : "suggestId","location" : map
+});
+
+
+ac.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+    var _value = e.fromitem.value;
+    if (e.fromitem.index > -1) {
+        value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+    }
+    //str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;    
+    value = "";
+    if (e.toitem.index > -1) {
+        _value = e.toitem.value;
+        value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+    } 
+});
+</script>
+
+</body>
+</html>

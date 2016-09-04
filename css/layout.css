@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#header{
+	top:0px;
+	left:0px;
+	width:100%;
+	height:60px;
+	}
+#header .h_logo{
+	float:left;
+	margin-left:150px;
+	margin-top:2px;
+	width:162px;
+	height:55px;
+	background:url(../images/YC.gif) no-repeat;
+	background-size:contain;
+	}
+	
+.menu{
+	font-family:"微软雅黑"; font-size:16px; margin-left:760px;}
+	
+.menu li{ float:left;margin-top:20px;}
+.menu li a{ text-decoration:none;color:#FFF; margin-left:10px;padding:5px 5px 5px 5px;
+border-radius:5px;
+transition:all 1s;
+-moz-transition: all 1s;	/* Firefox 4 */
+-webkit-transition: all 1s;	/* Safari 和 Chrome */
+-o-transition: all 1s; }
+ #header{ position:fixed; background:rgba(70,170,170,1);z-index:1000;
+ transition: ease-in-out 0.5s;
+-moz-transition: ease-in-out 0.5s;	/* Firefox 4 */
+-webkit-transition: ease-in-out 0.5s;	/* Safari 和 Chrome */
+-o-transition: ease-in-out 0.5s;}
+ .menu .active{ background:#FD9220;}
+ .menu a:hover{ background:#FD9220;}
+ .contact #submit:hover{background:#464646; cursor:pointer;}
